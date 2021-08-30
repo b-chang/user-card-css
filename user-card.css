@@ -1,7 +1,94 @@
+* {
+  font-family: "Roboto", sans-serif;
+}
+
 .main-container {
   display: flex;
   justify-content: center;
-  margin: 50px;
+  /* margin: 50px; */
+  margin: 0 auto;
+  max-width: 1200px;
+  height: 800px;
+}
+
+.left {
+  width: 60%
+}
+
+.right {
+  width: 30%
+}
+
+/* Nav  */
+
+.nav {
+  height: 80px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background-color: rgb(52, 52, 52);
+  max-width: 1200px;
+  /* margin: 50px; */
+  margin: 0 auto;
+}
+
+.nav-title {
+  color: white;
+}
+
+.nav-links a {
+  color: white;
+  text-decoration: none;
+  font-size: 22px;
+}
+
+li {
+  margin: 0 15px;
+  list-style: none;
+}
+
+.nav-title {
+  margin: 10px;
+}
+
+.nav-links {
+  display: flex;
+  justify-content: space-around;
+}
+
+.btn {
+  background-color: rgb(0, 200, 255);
+  color: white;
+  width: 100px;
+  height: 25px;
+  font-size: 16px;
+}
+
+/* end of Nav */
+
+
+/* education section box css */
+
+.education-section {
+  margin: 10px;
+  border: 1px solid grey;
+}
+
+.education-title-container {
+  height: 50px;
+  background-color:rgb(99, 99, 99);
+  color: white;
+  font-weight: bold;
+}
+
+.education-title-container h2 {
+  margin: 0;
+  padding-top: 10px;
+  padding-left: 10px;
+}
+
+.education-info {
+  margin: 30px;
 }
 
 .user-card {
@@ -9,10 +96,10 @@
   width: 700px;
   height: 400px;
   position: relative;
+  margin: 10px;
 }
 
-.profile-pic {
-  border: 1px solid black;
+.my-avatar {
   background-color: white;
   width: 100px; 
   height: 100px;
@@ -35,8 +122,6 @@
   margin: 5px 0 10px 25px;
 }
 
-.bottom {
-}
 
 h1 {
   margin-top: 50px;
@@ -44,6 +129,126 @@ h1 {
 }
 
 img {
-  height: 25px;
-  width: 25px;
+  height: 20px;
+  width: 20px;
+}
+
+/* connection requests */
+.connection-requests-container {
+  height: 250px;
+  border:1px solid black;
+  margin-top: 10px;
+}
+
+.title-flex {
+  height: 50px;
+  background-color:rgb(99, 99, 99);
+  display: flex;
+  justify-content: space-evenly;
+  align-items: center;
+}
+
+/* .connection-requests-header {
+  height: 50px;
+  background-color:rgb(99, 99, 99);
+  display: flex;
+  justify-content: space-evenly;
+  align-items: center;
+} */
+
+.connection-requests-header h2 {
+  margin: 0;
+  margin-right: 65px;
+  color: white;
+}
+
+.pending-requests {
+  width: 30px;
+  height: 30px;
+  text-align: center;
+  vertical-align: middle;
+  line-height: 30px;
+  border-radius: 50%;
+  display: inline;
+  background-color: rgb(174, 174, 174);
+}
+
+.your-connections-container {
+  height: 450px;
+  border: 1px solid grey;
+  margin-top: 25px;
+}
+
+.your-connections-container h2 {
+  margin: 0;
+  margin-right: 70px;
+  color: white;
+  background-color:rgb(99, 99, 99);
+}
+
+ul {
+  padding: 0;
+}
+
+li {
+  list-style: none;
+}
+
+.flex-list {
+  display: flex;
+  align-items: center;
+}
+
+.connections {
+  width: 60px;
+  height: 30px;
+  text-align: center;
+  vertical-align: middle;
+  line-height: 30px;
+  border-radius: 50%;
+  display: inline;
+  background-color: rgb(174, 174, 174);
+}
+
+.user-avatar {
+  width: 50px;
+  height: 50px;
+  margin: 10px;
+  border-radius: 50%;
+}
+
+.user-avatar .connected {
+  width: 30px;
+  height: 30px;
+  border-radius: 50%;
+  flex: 1;
+}
+
+.users-list p {
+  font-size: 24px;
+  flex: 2;
+  margin-left: 15px;
+}
+
+.accept-request {
+  flex: 2;
+}
+
+.accept-request img {
+  height: 40px;
+  width: 40px;
+  margin: 5px;
+}
+
+.view-more {
+  border-top: 1px solid black;
+  height: 50px;
+  vertical-align: middle;
+  line-height: 50px;
+  /* margin-left: 20px; */
+}
+
+.view-more a {
+  margin-left: 20px;
+  font-size: 20px;
 }

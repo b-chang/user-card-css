@@ -44,7 +44,7 @@
             </div>
             <div class="edit">
               <img src="assets/icons/gear.png" alt="settings">
-              <a href="/">edit profile</a>
+              <a href="#" onclick=editProfile(this)>edit profile</a>
             </div>
           </div>
         </div>
@@ -67,22 +67,22 @@
           </div>
             <ul class="users-list">
               <li>
-                <div class="flex-list">
-                  <img class="user-avatar pending" src="assets/images/todd-s.jpg"  alt="">
+                <div class="flex-list requester">
+                  <img class="user-avatar pending" src="assets/images/todd-s.jpg"  alt="tod-e-avatar">
                   <p>Todd E</p>
                   <div class="accept-request">
-                    <img src="assets/icons/accept-circle.png"  alt="">
-                    <img src="assets/icons/close-circle.png" alt="">
+                    <img src="assets/icons/accept-circle.png"  alt="accept" onclick=handleRequest(this)>
+                    <img src="assets/icons/close-circle.png" alt="close" onclick=handleRequest(this)>
                   </div>
                 </div>
               </li>
               <li>
-                <div class="flex-list">
-                  <img class="user-avatar" src="assets/images/phil-s.jpg"  alt="">
+                <div class="flex-list requester">
+                  <img class="user-avatar" src="assets/images/phil-s.jpg"  alt="phil-k-avatar">
                   <p>Phil K</p>
                   <div class="accept-request">
-                    <img src="assets/icons/accept-circle.png"  alt="">
-                    <img src="assets/icons/close-circle.png" alt="">
+                    <img src="assets/icons/accept-circle.png"  alt="accept" onclick=handleRequest(this)>
+                    <img src="assets/icons/close-circle.png" alt="close" onclick=handleRequest(this)>
                   </div>
                 </div>
               </li>
@@ -90,42 +90,43 @@
           </div>
           <div class="your-connections-container">
             <div class="your-connections-header title-flex">
-              <div class="connections">500+</div>
+              <div class="connections">500</div>
               <h2>Your Connections</h2>
             </div>
               <ul class="users-list">
                 <li>
                   <div class="flex-list my-connections">
-                    <img class="user-avatar connected" src="assets/images/adrien-s.jpg"  alt="">
+                    <img class="user-avatar connected" src="assets/images/adrien-s.jpg"  alt="adrien-d-avatar">
                     <p>Adrien D</p>
                   </div>
                 </li>
                 <li>
                   <div class="flex-list my-connections">
-                    <img class="user-avatar connected" src="assets/images/anne-s.jpg"  alt="">
+                    <img class="user-avatar connected" src="assets/images/anne-s.jpg"  alt="anne-j-avatar">
                     <p>Anne J</p>
                   </div>
                 </li>
                 <li>
                   <div class="flex-list my-connections">
-                    <img class="user-avatar connected" src="assets/images/alayne-s.jpg"  alt="">
+                    <img class="user-avatar connected" src="assets/images/alayne-s.jpg"  alt="alayne-t-avatar">
                     <p>Alayne T</p>
                   </div>
                 </li>
                 <li>
                   <div class="flex-list my-connections">
-                    <img class="user-avatar connected" src="assets/images/arry-s.jpg"  alt="">
+                    <img class="user-avatar connected" src="assets/images/arry-s.jpg"  alt="arry-avatar">
                     <p>Arry</p>
                   </div>
                 </li>
               </ul>
               <div class="view-more">
-                <a href="/">View More</a>
+                <a href="#">View More</a>
               </div>
           </div>
         </div>
       </div>
     </div>
   </div>
+  <script src="script.js"></script>
 </body>
 </html>
